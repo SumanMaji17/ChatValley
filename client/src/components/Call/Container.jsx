@@ -21,7 +21,7 @@ export default function Container({ data }) {
         setCallAccepted(true);
       }, 1000);
     }
-  }, [data]);
+  }, [data,socket]);
 
   useEffect(() => {
     const getToken = async () => {
