@@ -85,7 +85,7 @@ export default function Main() {
       socket.current.on("msg-recieve", (data) => {
         dispatch({
           type: reducerCases.ADD_MESSAGE,
-          newMessage: { ...data, message: decryptData(data.message) },
+          newMessage: { ...data.message },
         });
       });
 
